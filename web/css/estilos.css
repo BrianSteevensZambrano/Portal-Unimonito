@@ -1,0 +1,341 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/04/2019, 07:54:26 PM
+    Author     : bzamb
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url(menu.css);
+@import url(banner.css);
+@import url(blog.css);
+@import url(info.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+form{
+    /*forma del recuadro*/
+    width: 400px;
+    margin: auto;
+    background: rgba(0,0,0,0.8);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+#formusuario{
+    width: 500px;
+}
+
+h1{
+   /*personalización texto*/
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 10px; 
+}
+h6{
+    text-align: left;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+
+input{
+    display: block;
+    padding: 7px;
+    margin: 12px 0;
+    font-size: 20px;
+}
+.contenedor-inputs{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.inputText{
+    width: 48%;
+}
+.input-100{
+    width: 100%;
+}
+.output{
+    display: block;
+    padding: 7px;
+    margin: 12px 0;
+    font-size: 20px;
+    
+}
+input[type="submit"]{
+    background: linear-gradient(#02FEEB, #1CFBEA);
+    border: 0;
+    color: firebrick;
+    opacity: 0.8;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+input[type="submit"]:hover{
+    opacity: 1;
+}
+input[type="submit"]:active{
+    transform: scale(0.95);
+}
+
+@media(max-width:480px){
+    #formusuario, form{
+        width: 95%;
+    }
+}
+
+@media (max-width:480px){
+    #formusuario, form{
+        width: 100%;
+    }
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none; 
+}
+
+
+@media (min-width:768px) { 
+    .sociales {
+        width: auto;
+    }
+    
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1060px;
+    }
+}
+
+a{
+    color: white; 
+    text-decoration: none;
+}
+select{
+    padding: 8px;
+    width: 100%;
+    font-size: 20px;
+}
+
+header a img{
+	width: 100%;
+}
+#blog{
+	width: 90%;
+	margin:0 auto;
+	margin-left: 11%;
+	margin-top: 50px;
+    margin-bottom: 50px;
+}
+.producto{
+	width: 20%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1%;
+	margin-top: 1%;
+	color: #4a4a4a;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	padding: 1%;
+	-webkit-box-shadow: 0px 0px 10px rgba(240, 240, 240, 0.75);
+	-moz-box-shadow:    0px 0px 10px rgba(240, 240, 240, 0.75);
+	box-shadow:         0px 0px 10px rgba(240, 240, 240, 0.75);
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+}
+.producto:hover{
+
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
+.producto img{
+	width: 98%;
+	height: 98%;
+	margin:0 auto;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 10px rgba(74, 74, 74, 0.75);
+	-moz-box-shadow:    0px 0px 10px rgba(74, 74, 74, 0.75);
+	box-shadow:         0px 0px 10px rgba(74, 74, 74, 0.75);
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+}
+.producto img:hover{
+	-webkit-transform: rotate(355deg);
+	-moz-transform: rotate(355deg);
+}
+.producto a{
+	background-color: #4a4a4a;
+	padding: 3px;
+	color: white;
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 4px;
+}
+.aceptar{
+	background-color: #f13453;
+	color:white;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 4px;
+	font-size: 1.3rem;
+
+
+}
+.cat{
+    color: #4a4a4a;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+.aceptar:hover{
+	background-color: #4a4a4a;
+	cursor: pointer;
+}
+nav {
+  width  : 35%;
+  position: absolute;
+  z-index: 3;
+  left: 18%;
+  top:.5%;
+}
+
+
+menu:after , menu:before {
+  display : block;
+  content : ' ';
+}
+
+menu:after {
+  clear : both;
+}
+
+li {
+  list-style-type : none;
+
+
+  float   : left;
+  cursor  : pointer;
+  padding : 3px 10px;
+
+
+}
+
+li:first-child {
+  border-radius : 5px 0 0 5px;
+}
+
+li:last-child {
+  border-radius : 0 5px 5px 0;
+}
+
+li a {
+  display : block;
+  padding : 10px 13px;
+  font-size : 26px;
+  text-decoration : none;
+  border-radius   : 5px;
+  position        : relative;
+  top   : 0;
+  color : #FFF;			
+  transition : all .4s;
+}
+
+li:hover a {
+  top   : -20px;
+  color : #4eacff;
+  background-color: #fff;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+
+li a:after {
+  display  : block;
+  content  : '';
+  position : absolute;
+  top  : 100%;
+  left : 42%;
+  border-style : solid;
+  border-color : transparent;
+  border-width : 5px 5px 0 5px;
+  transition   : all .4s;
+}
+
+li:hover a:after {
+  border-color : white transparent transparent transparent;
+  transition   : all .4s;
+}
