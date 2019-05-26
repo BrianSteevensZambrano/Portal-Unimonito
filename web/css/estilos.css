@@ -18,7 +18,7 @@ and open the template in the editor.
     box-sizing: border-box;
 }
 
-body {
+h:body {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -77,6 +77,7 @@ header .contenedor{
 }
 
 input{
+    width: 342px;
     display: block;
     padding: 7px;
     margin: 12px 0;
@@ -89,17 +90,10 @@ input{
     justify-content: space-between;
 }
 .inputText{
-    width: 48%;
+    width: 100%;
 }
 .input-100{
     width: 100%;
-}
-.output{
-    display: block;
-    padding: 7px;
-    margin: 12px 0;
-    font-size: 20px;
-    
 }
 input[type="submit"]{
     background: linear-gradient(#02FEEB, #1CFBEA);
